@@ -1,0 +1,341 @@
+/* App.css */
+
+/* Base Styles */
+.App {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+  }
+  
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .dashboard-header p {
+    font-size: 1.1rem;
+    color: #777;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stats-cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .card h3 {
+    color: #555;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    font-size: 2rem;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .product-table {
+    width: 80%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .product-table th {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+  .product-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .product-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  button {
+    background-color: blue;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .updated-table {
+    width: 48%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .updated-table th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .updated-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  
+  .updated-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .updated-table td:first-child {
+    font-weight: bold;
+  }
+  
+  .updated-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Tablets (768px and below) */
+  @media (max-width: 768px) {
+    .tables-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-table,
+    .updated-table {
+      width: 100%;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Mobile Devices (576px and below) */
+  @media (max-width: 576px) {
+    .dashboard-header h1 {
+      font-size: 2rem;
+    }
+  
+    .dashboard-header p {
+      font-size: 1rem;
+    }
+  
+    .stats-cards {
+      flex-direction: column;
+    }
+  
+    .card {
+      margin: 10px 0;
+    }
+  
+    .product-table th,
+    .product-table td,
+    .updated-table th,
+    .updated-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+  /* Large Screens (1200px and above) */
+  @media (min-width: 1200px) {
+    .product-table,
+    .updated-table {
+      width: 45%;
+    }
+  
+    .stats-cards {
+      width: 80%;
+    }
+  }
+  /* Base Styles */
+.App {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+  }
+  
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .dashboard-header p {
+    font-size: 1.1rem;
+    color: #777;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stats-cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .card h3 {
+    color: #555;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    font-size: 2rem;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  /* Tables Container */
+  .tables-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Table Styles */
+  .product-table,
+  .updated-table {
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .product-table th,
+  .product-table td,
+  .updated-table th,
+  .updated-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+  }
+  
+  .product-table th,
+  .updated-table th {
+    background-color: #42454d;
+    color: #fff;
+  }
+  
+  .product-table tr:nth-child(even),
+  .updated-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .product-table tr:hover,
+  .updated-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  button {
+    background-color: blue;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive Tables: Mobile and Tablet */
+  @media (max-width: 768px) {
+    .tables-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-table,
+    .updated-table {
+      width: 100%;
+    }
+  
+    .product-table th,
+    .product-table td,
+    .updated-table th,
+    .updated-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .product-table,
+    .updated-table {
+      overflow-x: auto;
+      display: block;
+      white-space: nowrap;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  
